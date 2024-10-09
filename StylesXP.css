@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#windowsXP {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.area-de-trabalho {
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    background: url('https://images2.alphacoders.com/941/941898.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.barra-de-tarefas {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background: linear-gradient(
+        to bottom,
+        #245edb 0%,
+        #0c8dea 9%,
+        #245edb 18%,
+        #245edb 92%,
+        #333 100%
+    );
+}
+
+#iniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    border: none;
+    background: linear-gradient(
+        to bottom,
+        #3d973d 0%,
+        #6faf72 9%,
+        #3d973d 18%,
+        #3d973d 92%,
+        #666 100%
+    );
+    color: white;
+    text-shadow: 2px 2px 8px #003d00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+#iniciar:hover {
+    background: linear-gradient(
+        to bottom,
+        #3d973d 0%,
+        #6faf72 9%,
+        #3d973d 18%,
+        #37d437 92%,
+        #666 100%
+    );
+}
+
+.area-de-notificacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    background: linear-gradient(
+        to bottom,
+        #0fadf4 0%,
+        #0fadf4 9%,
+        #108ae5 18%,
+        #108ae5 92%,
+        #666 100%
+    );
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+#volume {
+    margin-left: 10px;
+    background: url('https://img.ibxk.com.br/2014/3/programas/7868525214145846.png');
+    background-size: cover;
+}
+
+#media {
+    margin-left: 10px;
+    background: url('https://icons.iconarchive.com/icons/hopstarter/software/256/Windows-Media-Player-icon.png');
+    background-size: cover;
+}
+
+#seguranca {
+    margin-left: 10px;
+    background: url('https://1.bp.blogspot.com/_8H6ayPA2iRw/R4Sp5ZVhUnI/AAAAAAAAAJk/Sv91jzKzPZs/s320/cat_icon_security_256.png');
+    background-size: cover;
+}
+
+#relogio {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.desktop-icon {
+    width: 120px;
+    height: 140px;
+    padding: 15px;
+    text-align: center;
+    cursor: context-menu;
+}
+
+.desktop-icon img {
+    max-width: 100%;
+}
+
+.desktop-icon span {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.desktop-icon.selected span {
+    background: #004E98;
+}
+
+#menuIniciar {
+    width: 350px;
+    height: 400px;
+    position: fixed;
+    bottom: 50px;
+    background: white;
+    z-index: 999;
+    border-top-right-radius: 5px;
+}
+
+.topoIniciar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(
+        to bottom,
+        #245edb 0%,
+        #0c8dea 9%,
+        #245edb 18%,
+        #245edb 92%,
+        #245edb 100%
+    );
+    border-top-right-radius: 5px;
+}
+
+.avatarIniciar {
+    width: 70px;
+    height: 70px;
+    background: white;
+    background-image: url("https://i.redd.it/tb3mnb7dzcd51.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.usuarioIniciar {
+    color: white;
+    margin-left: 20px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.mioloIniciar {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 160px); /* Ajustando altura para deixar espaço para o footer */
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footerIniciar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        to bottom,
+        #245edb 0%,
+        #0c8dea 9%,
+        #245edb 18%,
+        #245edb 92%,
+        #245edb 100%
+    );
+}
+
+.btnFooter{
+    display: flex;
+    align-items: center; 
+}
+
+.btnFooter a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.itemIniciar{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    cursor: pointer;
+}
+.itemIniciar:hover{
+    background: #245edb;
+}
+.itemIniciar:hover span{
+    color: white;
+
+}
+.itemIniciar:hover span>strong{
+    color: white;
+}
+.itemIniciar span{
+    margin-left: 10px;
+    color: #666;
+}
+.itemIniciar span>strong{
+    color:black;
+}
